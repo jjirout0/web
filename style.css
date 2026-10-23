@@ -1,0 +1,133 @@
+/* 1. Celá stránka */
+/* Skryje skutečný systémový kurzor na celé stránce */
+html, body, * {
+    cursor: none !important;
+}
+
+/* Styl pro náš vlastní, falešný kurzor */
+#custom-cursor {
+    position: fixed; /* Fixní pozice, aby kurzor "necestoval" se stránkou při scrollování */
+    pointer-events: none; /* Zajistí, že kurzor nebude blokovat klikání na prvky pod ním */
+    z-index: 99999; /* Umístí kurzor nad všechny ostatní prvky na stránce */
+
+    /* Nastavení obrázku jako kurzoru */
+    width: 64px; /* Upravte podle velikosti vašeho obrázku drvy.jpg */
+    height: 64px; /* Upravte podle velikosti vašeho obrázku drvy.jpg */
+    background-image: url('images/drvy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* Otočení obrázku vzhůru nohama */
+    transform: translate(-50%, -50%); /* translate posune střed obrázku na pozici myši, rotate jej otočí */
+    display: none; /* Kurzor se zobrazí až po prvním pohybu myši, aby nebyl vidět v rohu po načtení */
+}
+body {
+
+    font-family: Helvetica, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-image: url("images/stepa.jpg") ;
+    background-size: 150px auto; /* šířka jedné dlaždice 150px, výška dopočítaná */
+
+
+
+
+
+
+}
+.wordart-rainbow {
+    font-family: "Impact", sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: perspective(300px) rotateX(20deg) skewX(-10deg);
+    filter: drop-shadow(2px 2px 0px #000)
+    drop-shadow(4px 4px 0px #300060)
+    drop-shadow(6px 6px 0px #000);
+    display: inline-block;
+}
+h1{
+    color: #ff0000;
+    border-bottom: 5px solid #ff0000;
+
+
+}
+h2{
+
+    color: #ff0083;
+    border-bottom: 5px solid #ff0083;
+}
+nav{
+    background: #ff0083;
+    padding: 10px;
+}
+nav a{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    color: #fff;
+    background: #8c00ff;
+    text-decoration: none;
+    border-radius: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000px;
+}
+nav a:hover{background: black}
+img{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+main{
+    margin-top:30px;
+}
+section{
+    padding: 20px;
+    background: #d6d66c;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+figure{
+    padding: 15px;
+    background: #001a6e;
+}
+figcaption{
+    color: #545842;
+    margin-top: 5px;
+    text-align: center;
+}
+form
+{
+    padding: 20px;
+    background: #d6d66c;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+
+
+}
+
+/* 2. Nadpisy */
+
+
+/* 3. Navigace a odkazy */
+
+
+/* 4. Hlavní obsah a jednotlivé sekce */
+
+
+/* 5. Obrázky a jejich popisky */
+
+
+/* 6. Tabulka */
+
+
+/* 7. Zápatí */
+

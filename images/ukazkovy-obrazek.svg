@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title description">
+    <title id="title">Krajina s horami a jezerem</title>
+    <desc id="description">Barevná ilustrace zapadajícího slunce, hor a jezera.</desc>
+
+    <rect width="900" height="500" fill="#bfe3f5"/>
+    <circle cx="700" cy="115" r="65" fill="#f7c948"/>
+    <path d="M0 330 L210 120 L390 330 Z" fill="#356859"/>
+    <path d="M210 120 L270 190 L160 190 Z" fill="#f7f7f2"/>
+    <path d="M250 330 L520 85 L780 330 Z" fill="#244b5a"/>
+    <path d="M520 85 L590 150 L455 150 Z" fill="#f7f7f2"/>
+    <path d="M580 330 L760 175 L900 330 Z" fill="#3f735e"/>
+    <rect y="330" width="900" height="170" fill="#2d7ca6"/>
+    <path d="M0 390 Q180 350 360 395 T720 390 T900 400" fill="none" stroke="#8ed1e8" stroke-width="12"/>
+</svg>

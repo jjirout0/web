@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Můj web | Domů</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="custom-cursor"></div>
+    <header>
+        <h1 class="wordart-rainbow">VÍTEJTE NA WEBU</h1>
+
+        <nav>
+            <a href="index.html">Domů</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="rozvrh.html">Rozvrh</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+    <button id="utek" style="position: absolute; left: 100px; top: 100px;">Robuxy zdarma, klikni zde!</button>
+    <script>
+        const btn = document.getElementById('utek');
+        btn.addEventListener('mouseenter', () => {
+            btn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            btn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        });
+    </script>
+
+    <main>
+        <section class="uvod">
+            <marquee behavior="alternate" scrollamount="50">⚠️ TENTO WEB JE VE VÝSTAVBĚ ⚠️</marquee>
+            <h2>Vítejte na mém webu</h2>
+
+            <p>
+                Toto je jednoduchý web, na kterém si vyzkouším základy HTML a CSS.
+                Text později změním tak, aby stránka byla skutečně moje.
+            </p>
+        </section>
+
+        <section>
+            <h2>Několik informací</h2>
+
+            <ul>
+                <li>Oblíbený předmět: informatika</li>
+                <li>Oblíbená barva: modrá</li>
+                <li>Oblíbené jídlo: pizza</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Co se chci naučit</h2>
+
+            <p>
+                Chci se naučit vytvářet přehledné webové stránky,
+                upravovat jejich vzhled a později přidávat interaktivní prvky.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Vytvořeno v hodinách Úvodu do WWW</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
